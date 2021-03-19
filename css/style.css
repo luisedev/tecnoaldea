@@ -68,7 +68,7 @@ nav {
     body {
         background: url(../img/background.png);
         background-size: cover;
-        color: #333;
+        color: white;
     }
     .shadow,
     nav {
