@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 40px!important;
+}
+
+.font-chango {
+    font-family: 'Chango', cursive;
+}
+
+.row {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.flash {
+    position: absolute;
+    bottom: 10px;
+    right: -8px;
+    width: 300px;
+    padding: 10px;
+    z-index: 10;
+    animation: appear 0.5s linear;
+}
+
+nav {
+    border-radius: 0px!important;
+}
+
+.flash {
+    backdrop-filter: blur( 10.0px);
+    -webkit-backdrop-filter: blur( 10.0px);
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 10px;
+    background: #ff001982;
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: url(../img/dark-background.png);
+        background-size: cover;
+        color: #f0efef;
+    }
+    .shadow,
+    nav {
+        backdrop-filter: blur( 5.0px);
+        -webkit-backdrop-filter: blur( 5.0px);
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .nav-link {
+        color: #f0efef!important;
+    }
+    .btn-primary {
+        color: #f0efef;
+        background-color: #333!important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: url(../img/background.png);
+        background-size: cover;
+        color: #333;
+    }
+    .shadow,
+    nav {
+        backdrop-filter: blur( 10.0px);
+        -webkit-backdrop-filter: blur( 10.0px);
+        border-radius: 10px;
+    }
+    .btn-primary {
+        background-color: #07bada!important;
+        border: none;
+        transition: 1s;
+        box-shadow: 0px 0px 10px -2px #333;
+    }
+    .btn-primary:hover {
+        background-color: #07bada56!important;
+    }
+}
+
+#container {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 50%;
+}
+
+#flip {
+    height: 70px;
+    overflow: hidden;
+}
+
+#flip>div>div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 55px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div div {
+    background: #adffe46b;
+}
+
+#flip div:first-child div {
+    background: #2e4f72;
+}
+
+#flip div:last-child div {
+    background: #152434;
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}

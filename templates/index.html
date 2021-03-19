@@ -1,0 +1,107 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock title %} {% block navbaritems %} {% include 'nav.html' %} {% endblock %} {% block content %}
+
+<!-- INTRODUCTION-->
+<div class="row justify-content-center  my-3 ">
+    <div class="col-md-10 text-center pt-2 mt-5">
+        <div id=container>
+            Enjoy
+            <div id=flip>
+                <div>
+                    <div>Tech</div>
+                </div>
+                <div>
+                    <div>Nature</div>
+                </div>
+                <div>
+                    <div>Everything</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- INTRODUCTION-->
+<div class="row justify-content-center  my-3 ">
+    <div class="col-md-3 text-center m-1 p-4 ">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo image" class=" img-fluid">
+    </div>
+    <div class="col-md-6 text-center m-1 p-4 ">
+        <img src="{{ url_for('static', filename='img/office.png') }}" alt="office image" class=" img-fluid">
+    </div>
+</div>
+<!--Conocenos-->
+<div class="row justify-content-center  my-3 " id="conocenos">
+    <div class="col-md-6 col-lg-4 m-1 p-4 lead text-left my-auto shadow" style="font-size: 1.5em;">
+        <h3>Conocenos</h3>
+        <hr>
+        <p>Nuestra Tecnoaldea es un espacio sostenible formado por una red de empresas que se unen para compartir recursos e impulsar el progreso tecnológico y económico. Cona la tecnoaldea buscamos combatir la despoblación en las zonas rurales generando
+            empleo en estas zonas y promoviendo la mejora de la calidad de vida.
+        </p>
+        <p>
+            Ofrecemos servicios a startups, conferencias, formación, recursos tecnológicos y mucho más.
+        </p>
+    </div>
+    <div class="col-md-3 text-center m-1 d-none d-md-block my-auto ">
+        <img src="{{ url_for('static', filename='img/mobile.png') }}" alt="mobile image" class="img-fluid">
+    </div>
+</div>
+<!--Alianzas-->
+<div class="row justify-content-center  py-5 mb-5 " id="alianzas">
+    <div class="col-md-3 text-center m-1 my-auto ">
+        <img src="{{ url_for('static', filename='img/sitting.png') }}" alt="mobile image" class="img-fluid">
+    </div>
+    <div class="col-md-6 col-lg-4 my-auto p-4 lead text-left shadow my-auto" style="font-size: 1.5em;">
+        <h3 class="text-left">Alianzas</h3>
+        <hr>
+        <p>
+            Telefónica ha impulsado la creación de la tecnoaldea gracias a las alianzas establecidas con numerosas empresas que colaborar estrechamente para hacer posible esta realidad, ofreciendo sus conocimientos, recursos y tecnología.
+        </p>
+    </div>
+</div>
+<!--Conferencias-->
+<div class="row justify-content-center  mt-5 mb-3 " id="alianzas">
+    <div class="col-md-10 text-center m-1 " id="conferencias">
+        <h1 class="d-none d-md-block" style="font-size: 6em;">Conferencias</h1>
+        <h1 class="d-block d-md-none" style="font-size: 4em;">Conferencias</h1>
+    </div>
+
+</div>
+<div class="row justify-content-center  mt-3 pb-5 " id="alianzas">
+    <div class="col-md-10 text-center m-1 " id="conferencias">
+        <div class="row justify-content-center">
+
+            <div class="col-md-3 shadow m-2 py-2 text-center">
+                <h5> La privacidad, ¿ es algo del pasado? </h5>
+                <p class="text-center">20-03-2021</p>
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/con1.jpg') }}" alt=""></div>
+            <div class="col-md-3 shadow m-2 py-2 text-center">
+                <h5> Objetivos de desarrollo sostenible </h5>
+                <p class="text-center">26-03-2021</p>
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/con2.jpg') }}" alt=""></div>
+            <div class="col-md-3 shadow m-2 py-2 text-center">
+                <h5> Vehículos impulsados por hidrógeno </h5>
+                <p class="text-center">10-04-2021</p>
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/con3.jpg') }}" alt=""></div>
+            <div class="col-md-3 shadow m-2 py-2 text-center">
+                <h5> El futuro de los lenguajes de programación </h5>
+                <p class="text-center"> 19-04-2021</p>
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/con4.jpg') }}" alt=""></div>
+            <div class="col-md-3 shadow m-2 py-2 text-center">
+                <h5> Economía y finanzas con blockchain </h5>
+                <p class="text-center">20-06-2021</p>
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='img/con5.jpg') }}" alt=""></div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %} {% block addScript %}
+
+<script type="text/javascript">
+    document.getElementById("navegador").className = 'navbar navbar-expand-lg navbar-light  fixed-top shadow hacia-arriba';
+    alert("DISCLAIMER: Esta web solo es un proyecto de los alumnos de la UAH, las alianzas mencionadas no son reales")
+</script>
+
+
+
+{% endblock %}

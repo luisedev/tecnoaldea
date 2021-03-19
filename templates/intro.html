@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title %} Intro {% endblock title %} {% block links %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/intro.css') }}" /> {% endblock links %} {% block content %}
+<div class="main text-center">
+    <h2 class="text-white"> Made by </h2>
+    <h1 class="text-white">UAH Students</h1>
+</div>
+{% endblock %} {% block addScript %}
+<script>
+    setTimeout(function() {
+        link = window.location.href;
+        link = link.replace("intro", "");
+        window.location.replace(link);
+    }, 5670);
+</script>
+{% endblock addScript %}
