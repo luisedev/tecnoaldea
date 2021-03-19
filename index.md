@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light shadow" id="navegador">
             <a class="navbar-brand" href="#">
-                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" class="logo shadow">
+                <img src="img/logo.png" alt="" class="logo shadow">
             </a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon "></span>
