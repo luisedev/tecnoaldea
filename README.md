@@ -6,6 +6,9 @@ Requirements:
   pip
 
 Use:
-  python -m pip install requierements.txt
+
+  python -m pip install requirements.txt
   python app.py
-Then go to localhost:80/intro
+  
+Then go to
+  localhost:80/intro
